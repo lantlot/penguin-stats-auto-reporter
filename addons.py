@@ -11,6 +11,7 @@ class Reporter:
     def __init__(self):
         userid = '91528942'
         self.session = requests.Session()
+        # 暂时从浏览器里抓到头来模拟浏览器提交
         self.session.headers = {
             'content-type': 'application/json;charset=UTF-8',
             'cookie': '__cfduid=d8ce585ee88947d8468cbfc8c5b19a8c51604338917; _ga=GA1.2.1995108991.1604338921; _gid=GA1.2.884072268.1605353302; userID=' + userid + '; crisp-client%2Fsession%2F2aa1bf4c-8c34-4028-9e1c-ca1f6c330779=session_f8fa504c-43c8-4e39-bbfb-f67b09271b04; _gat=1'}
